@@ -1,0 +1,44 @@
+<div class="container">
+  <button class="btn open-modal-button" (click)="toggleModal()">Add Album</button>
+</div>
+
+<div *ngIf="modalVisible" id="add-album-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal-button" (click)="toggleModal()">&times;</span>
+    <form class="add-album-form">
+      <div class="form-group">
+        <label for="artist">Artist</label>
+        <input type="text" id="artist" required>
+      </div>
+
+      <div class="form-group">
+        <label for="title">Album Title</label>
+        <input type="text" id="title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="number" id="year" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cover-url">Album Cover URL</label>
+        <input type="text" id="cover-url">
+      </div>
+
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre">
+      </div>
+
+      <div class="form-group">
+        <label for="score">Score</label>
+        <input type="number" id="score">
+      </div>
+
+      <div class="container">
+        <button type="submit" class="btn submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<table *ngFor="let album of albums">
+  <tr>
+    <td class="cover">
+      <img src={{album.imgUrl}} />
+    </td>
+    <td class="artist">{{album.artist}}</td>
+    <td class="title">{{album.title}}</td>
+    <td class="year">{{album.year}}</td>
+    <td class="score">{{album.score}}</td>
+  </tr>
+</table>
